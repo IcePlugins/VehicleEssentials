@@ -15,7 +15,7 @@ Workshop requirements: [Belt UI required](https://steamcommunity.com/sharedfiles
 
 ## Translations
 
-(Warning) message of autowarnmechanic
-(Iconwarning) icon message of autowarnmechanic
+* (Warning) message of autowarnmechanic
+* (Iconwarning) icon message of autowarnmechanic
 
 Created by TERROR

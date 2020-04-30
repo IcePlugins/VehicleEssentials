@@ -3,6 +3,7 @@
 [https://iceplugins.xyz/VehicleEssentials/](https://iceplugins.xyz/VehicleEssentials/)
 
 Workshop requirements: [Belt UI required](https://steamcommunity.com/sharedfiles/filedetails/?id=1774536574)
+Key's "shift" for put on belt
 
 ## Configuration
 

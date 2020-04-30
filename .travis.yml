@@ -1,0 +1,11 @@
+language: csharp
+solution: VehicleCrash/VehicleEssentials.sln
+deploy:
+  edge: true
+  provider: releases
+  api_key:
+    secure: AllzQCA+BREuqoPQavQEN/pJUAdh77cP7A0w5KW/LHSBJUiogV4hVWzjel32eNJW6E37THpq0EhQC/avkMg3sV+H4UqDAOHVA6JCf0TrJzD/2NUpMwno72VTqjI3D0blr5MzkfSnvEFa2mHghvyJEiXM2C/Gq666GvZXwMN6zfjrSCQzp2RpxPaEUZA3X1RpfH2Mb7MbSN2gOux5UXJMQD9+uEOny2fSYGxS1bQ4s6Xn+M1n2Zw8QVB+mRK9YPNS20MUomGOrln+mWc5QQdH6Ly3q+RP1Ildj8wTD7ZQtcW1DlWLNeHAUc6rAHOa1GQzrmKUBtt58BFPdD2e0aHIJJFk2JlITBNnapRf0v52CGQXOPul7nFGKbM9dAcQQEttCk4kWwlCNaXR9mk41NHj6vx3MCY6q5wIluS+DTmg8oZSCFUEIaLo/s71K40ghfPyrX7W7h+XbfG8bUZ2opockWsjsJGdsatoiXE0AFhXGcUmB/vSB9THZ/DutwMXjqAHcCzXclBHSaMMJ6l7U+61WJvzLsKva82HVBRbK4XI8Yj+uJauUvoxhsuMY5zZd1ByAeR7FNKIX0uBtcgQmDUT2kYPvVAmSpv/Tr6PEE9MLufr13uMrS7essuCigGqnDJhQERqiaEobRbRoFfLiMLCV9xe8RDpYQiBb4qHDcuLO4g=
+  file: 'VehicleCrash/bin/Release/VehicleEssentials.dll'
+  on:
+    tags: true
+  skip_cleanup: true

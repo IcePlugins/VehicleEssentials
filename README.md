@@ -13,5 +13,12 @@ Workshop requirements: [Belt UI required](https://steamcommunity.com/sharedfiles
 * wheelchancedamage = <default .45f> | the chance of breaking the wheels of the vehicle
 * autowarnmechanic = <true/false> | alert a mechanic true
 
+## Translations
+
+(Warning) message of autowarnmechanic
+(Iconwarning) icon message of autowarnmechanic
+
+* {"warning", "(color=yellow)[Vehicle Essentials](/color)(color=red) {0} need a mechanic SMS him(/color)"}
+* {"iconwarning", "https://darknessplugins.com/images/21.png"}
 
 Created by TERROR

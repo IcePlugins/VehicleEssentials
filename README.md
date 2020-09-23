@@ -8,6 +8,7 @@ Workshop requirements: [Belt UI required](https://steamcommunity.com/sharedfiles
 ## Configuration
 
 * nausea = <true/false> | once the vehicle is impacted, the person will see his screen blurred
+* ifvehiclehasXhealthStopWork = <default 248> | 248 is equal of 48%, when the vehicle has 48% of health, it will stop work until it be repaired
 * nauseatime = <default 10> | when will the blurred screen last
 * healthdamage = <default 11> | health damage per crash ( Once the vehicle is impacted, you get damage to your player )
 * wheelsdamage = <true/false> | tires can break per crash ( Once the vehicle is impacted can get tires damaged )

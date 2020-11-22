@@ -11,40 +11,41 @@ namespace VehicleCrash
     public class PlayerComponent : UnturnedPlayerComponent
     {
         public bool niggagetwork = false, check = false;
-
+        
         public void FixedUpdate()
         {
-            if (Player.IsInVehicle)
-            {
-                if (Player.Player.input.keys[5])
+            /*if (Player.CurrentVehicle.asset.engine == EEngine.CAR)
+            {*/
+                if (Player.IsInVehicle && Player.CurrentVehicle.asset.engine == EEngine.CAR)
                 {
-                    if (!check)
-                        niggagetwork = !niggagetwork;
-                    check = true;
+                    if (Player.Player.input.keys[5])
+                    {
+                        if (!check)
+                            niggagetwork = !niggagetwork;
+                        check = true;
+                    }
+                    else
+                        check = false;
+
+                    if (niggagetwork)
+                    {
+                        EffectManager.askEffectClearByID(14033, Player.CSteamID);
+
+                        EffectManager.sendUIEffect(14044, 14035, Player.CSteamID, true);
+                    }
+                    else
+                    {
+                        EffectManager.askEffectClearByID(14044, Player.CSteamID);
+                        EffectManager.sendUIEffect(14033, 14034, Player.CSteamID, true);
+                    }
                 }
                 else
-                    check = false;
-
-                if (niggagetwork)
                 {
                     EffectManager.askEffectClearByID(14033, Player.CSteamID);
-
-                    EffectManager.sendUIEffect(14044, 14035, Player.CSteamID, true);
-                }
-                else
-                {
                     EffectManager.askEffectClearByID(14044, Player.CSteamID);
-                    EffectManager.askEffectClearByID(14933, Player.CSteamID);
-                    EffectManager.sendUIEffect(14033, 14034, Player.CSteamID, true);
+                    niggagetwork = false;
                 }
+                // }
             }
-            else
-            {
-                EffectManager.askEffectClearByID(14033, Player.CSteamID);
-                EffectManager.askEffectClearByID(14933, Player.CSteamID);
-                EffectManager.askEffectClearByID(14044, Player.CSteamID);
-                niggagetwork = false;
-            }
-        }
     }
 }

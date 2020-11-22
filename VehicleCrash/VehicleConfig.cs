@@ -17,9 +17,17 @@ namespace VehicleCrash
 
         public float wheelchancedamage;
 
+        public ushort ifvehiclehasXhealthStopWork;
+
+        public ushort burnfueldamageifvehiclestopworking;
+
+        public bool burnfuelifvehiclestopworking;
+
         public void LoadDefaults()
         {
             nausea = true;
+
+            ifvehiclehasXhealthStopWork = 248; // this means 50%
 
             nauseatime = 10;
 
@@ -27,7 +35,11 @@ namespace VehicleCrash
 
             wheelsdamage = true;
 
-            wheelchancedamage = .45f;
+            burnfuelifvehiclestopworking = true;
+
+            burnfueldamageifvehiclestopworking = 50;
+
+            wheelchancedamage = .45f; // this means 45% nigga
 
             autowarnmechanic = true;
         }
